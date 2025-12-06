@@ -56,4 +56,4 @@ This is the first version of this library. So will be updating it when i have mo
 <br/>
 
 Tested on latest version of Chrome, Firefox and Edge on windows
-<br/> 
+<br/>

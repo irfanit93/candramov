@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      canvas {
+        margin: 0;
+        touch-action: none;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      width="1530"
+      height="720"
+      style="border: 1px solid rgb(162 45 188); float: left"
+    >
+    </canvas>
+    <script src="./Mouse.js"></script>
+    <script src="./Keyboard.js"></script>
+    <script src="./shapes.js"></script>
+    <script>
+/*
+  The below is the how to use it in your application
+*/
+const canvas = document.getElementById("canvas");
+//This variable name ctx is used as it in the Javascript code as of now. will keep it dynamic in upcoming versions
+const ctx = canvas.getContext("2d");
+
+const mouse = new Mouse("canvas");
+const keyboard = new Keyboard();
+const root = new Shape();
+console.log("root",root);
+requestAnimationFrame(()=>root.draw());
+
+    </script>
+  </body>
+</html>

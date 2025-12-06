@@ -1,3 +1,4 @@
+//Generate random hex number
 const randomHex = () => Math.round(Math.random() * 255);
 
 const line = (startPosition, allPositions, { close, fill, fillColor,lineWidth }) => {

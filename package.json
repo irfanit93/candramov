@@ -1,6 +1,6 @@
 {
   "name": "candramov",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "main": "shapes.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "library",
     "draw",
     "shapes",
-    "box",  
+    "box",
     "square",
     "rectangle",
     "triangle",

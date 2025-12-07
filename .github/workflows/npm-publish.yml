@@ -5,6 +5,10 @@ name: candramov
 
 on: [push]
 
+permissions:
+  id-token: write  # Required for OIDC
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,7 +27,6 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: npm adduser
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

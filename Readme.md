@@ -51,6 +51,16 @@ Apart from the above there are some <b>Utility</b> functions provided as below:
 <br/>
   curve
 <br/>
+<b>
+Update 1.0.11:
+</b>
+<br/>
+Now you can include just a single minified dist/shapes.min.js in script tag in your web application.
+<br/>
+Updated runcanvas.html file as well due to this change.
+<br/>
+There is unminified file inside dist folder in case you need for better debugging and ofcourse all code in a single file. No need of separate Keyboard and Mouse js files.
+<br/>
 
 This is the first version of this library. So will be updating it when i have more time to refine the code and to add functionalities.
 <br/>
